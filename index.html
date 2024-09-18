@@ -3,10 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Korkinet</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>K</h1>
+    <div id="serchDiv">
+        <input type="text" placeholder="search Korkinet by Model" id="inputModel" onchange="searchByModel()">
+        <input type="number" placeholder="search Korkinet by Battery level" id="inputBattery" onchange="searchByBattery()">
+    </div>
+    <div id="func">
+        <button id="btnAdd">Add New Korkinet</button>
+        <button id="btnFilter">Filter</button>
+    </div>
+    <table id="tableKorkinet">
+        <thead>
+            <th>Img</th>
+            <th>Model</th>
+            <th>Battery</th>
+            <th>Location</th>
+            <th>Color</th>
+            <th>Status</th>
+            <th>--</th>
+        </thead>
+    </table>
     <script src="script.js"></script>
 </body>
 </html>
